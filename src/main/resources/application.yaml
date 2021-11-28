@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    generate-ddl: true
+#    hibernate:
+#      ddl-auto: create
+    show-sql: true
+  data:
+    mongodb:
+      username: root
+      password: root123
+      host: ${MONGO_DB_HOST:localhost}
+      port: 27017
+      database: app
+      authentication-database: admin
