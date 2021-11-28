@@ -29,6 +29,8 @@ services:
   app:
     container_name: mongodb_app
     image: mongo-ex-01:1.0
+    environment:
+      MONGO_DB_HOST: mongodb_5
     depends_on:
       - "mongo"
     ports:
